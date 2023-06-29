@@ -296,7 +296,7 @@ export const Flight = () => {
         <label>
           <div className="flight__label">Odkud:</div>
           <select
-            value={flights.map((flight) => console.log(flight.from))}
+            value={fromCity}
             onChange={(e) => setFromCity(e.target.value)}
           >
             <option value="">Vyberte</option>
@@ -309,10 +309,7 @@ export const Flight = () => {
         </label>
         <label>
           <div className="flight__label">Kam:</div>
-          <select
-            value={flights.map((flight) => flight.to)}
-            onChange={(e) => setToCity(e.target.value)}
-          >
+          <select value={toCity} onChange={(e) => setToCity(e.target.value)}>
             <option value="">Vyberte</option>
             {flights.map((flight) => (
               <option key={flight.id} value={flight.to}>
@@ -322,9 +319,9 @@ export const Flight = () => {
           </select>
         </label>
         <label>
-          <div className="flight__label">Datum:</div>
+          <div className="flight__label">Datum odletu:</div>
           <select
-            value={flights.map((flight) => flight.departure)}
+            value={dateDeparture}
             onChange={(e) => setDateDeparture(e.target.value)}
           >
             <option value="">Vyberte</option>
