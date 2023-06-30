@@ -11,6 +11,14 @@ export const Flight = () => {
   const [price, setPrice] = useState('');
   const [selectedFlight, setSelectedFlight] = useState(null);
 
+  // useEffect(() => {
+  //   fetch('https://pastebin.com/LRfGdcJx')
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setFlights(data);
+  //     });
+  // }, []);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const selected = flights.find(
@@ -38,13 +46,18 @@ export const Flight = () => {
         </label>
         <label>
           <div className="flight__label">Kam:</div>
-          <select value={toCity} onChange={(e) => setToCity(e.target.value)}>
+          <select
+            value={toCity}
+            // disabled={fromCity ? true : false}
+            onChange={(e) => setToCity(e.target.value)}
+          >
             <option value="">Vyberte</option>
             {flights.map((flight) => (
               <option key={flight.id} value={flight.to}>
                 {flight.to}
               </option>
             ))}
+            {}
           </select>
         </label>
         <label>

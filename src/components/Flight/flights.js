@@ -270,3 +270,29 @@ export const flights = [
     ],
   },
 ];
+
+//fromCity === 'Prague'
+// ? flight.to === 'London'
+// : fromCity === 'London'
+// ? 'Paris'
+// : fromCity === 'Paris'
+// ? 'Rome'
+// : fromCity === 'Rome'
+// ? 'Barcelona'
+// : fromCity === 'Barcelona'
+// ? 'Berlin'
+// : fromCity === 'Berlin'
+// ? 'Vienna'
+// : fromCity === 'Vienna'
+// ? 'Amsterdam'
+// : fromCity === 'Amsterdam'
+// ? 'Madrid'
+// : fromCity === 'Madrid'
+// ? 'Athens'
+// : fromCity === 'Athens'
+// ? 'Vienna'
+// : fromCity === 'Vienna'
+// ? 'Lisbon'
+// : fromCity === 'Lisbon'
+// ? 'Vienna'
+// :
