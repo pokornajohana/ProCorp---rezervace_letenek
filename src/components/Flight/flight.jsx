@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FlightDetails } from '../FlightDetails/flightDetails';
-import { flights } from './flights';
+import { flights } from './flights.js';
 
 export const Flight = () => {
   // const [flights, setFlights] = useState([]);

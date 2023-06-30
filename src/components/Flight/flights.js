@@ -1,4 +1,4 @@
-const flights = [
+export const flights = [
   {
     id: 1,
     from: 'Prague',
