@@ -39,7 +39,7 @@ export const Flight = () => {
             <option value="">Vyberte</option>
             {flights.map((flight) => (
               <option key={flight.id} value={flight.from}>
-                {selectedFlight ? selectedFlight.from : flight.from}
+                {flight.from}
               </option>
             ))}
           </select>
@@ -54,7 +54,7 @@ export const Flight = () => {
             <option value="">Vyberte</option>
             {flights.map((flight) => (
               <option key={flight.id} value={flight.to}>
-                {selectedFlight ? selectedFlight.to : flight.to}
+                {flight.to}
               </option>
             ))}
             {}
@@ -69,7 +69,7 @@ export const Flight = () => {
             <option value="">Vyberte</option>
             {flights.map((flight) => (
               <option key={flight.id} value={flight.departure}>
-                {selectedFlight ? selectedFlight.departure : flight.departure}
+                {flight.departure}
               </option>
             ))}
           </select>
@@ -80,7 +80,7 @@ export const Flight = () => {
             <option value="">Vyberte</option>
             {flights.map((flight) => (
               <option key={flight.id} value={flight.price}>
-                {selectedFlight ? selectedFlight.price : flight.price}
+                {flight.price}
               </option>
             ))}
           </select>
